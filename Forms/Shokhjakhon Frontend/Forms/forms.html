@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    
+    <h2>FORMA</h2>
+
+    <form action="../index.html" method="get">
+        <input type="text"> //TEXT max=255 words
+        <hr>
+        <input type="password"> //password
+        <hr>
+        <input type="number"> //number
+        <hr>
+        <input type="date"> //date
+        <hr>
+        <input type="datetime-local">
+        <hr>
+        <input type="month">
+        <hr>
+        <input type="week">
+        <hr>
+        <input type="time">
+        <hr>
+        <input type="tel">
+        <hr>
+        <input type="email">
+        <hr>
+        <input type="url">
+        <hr>
+        <input type="search">
+        <hr>
+        <input type="file" multiple accept="image/jpg, imgae/png">
+        <hr>
+        <input type="color">
+        <hr>
+        <input type="range" max="100" min="0" step="20" value="20">
+        <span id="rangevalue">20</span>
+        <hr>
+        <hr>
+        <button type="submit">Tasdiqlash</button>
+    </form>
+
+
+    <script>
+        let inpcolor =  document.querySelector('input[type="color"]')
+        let inprange =  document.querySelector('input[type="range"]')
+        let span =  document.querySelector('#rangevalue')
+         inpcolor.oninput = ()=>{
+            document.body.style.backgroundColor = inpcolor.value
+         }
+         inprange.oninput = ()=>{
+            span.innerTEXT = inprange.value
+         }
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        img, video {
+            width: 600px;
+            height: 400px;
+        }
+        .images {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            gap: 20px;
+            padding: 0px 37px;
+        }
+        .video {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            gap: 20px;
+            padding: 0px 37px;
+        }
+        audio {
+            width: 400px;
+            height: 100px;
+        }
+        .audio {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            padding: 0px 180px;
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+
+   <div class="img">
+        <h1>Images</h1>
+        <div class="images">
+            <img src="../assets/images/photo1.jpg" alt="error">
+            <img src="../assets/images/photo2.webp" alt="error">
+            <img src="../assets/images/photo3.avif" alt="error">
+            <img src="../assets/images/photo4.webp" alt="error">
+            <img src="../assets/images/photo5.jpg" alt="error">
+            <img src="../assets/images/photo6.jpg" alt="error">
+        </div>
+    </div>
+
+    <div class="vd">
+        <h1>Videos</h1>
+        <div class="video">
+            <video src="../assets/video/video1.mp4" controls muted loop></video>
+            <video src="../assets/video/video2.mp4" controls muted></video>
+            <video src="../assets/video/video3.mp4" controls muted></video>
+            <video src="../assets/video/video4.mp4" controls muted></video>
+            <video src="../assets/video/video5.mp4" controls muted></video>
+            <video src="../assets/video/video6.mp4" controls muted></video>
+        </div>
+    </div>
+
+    <div class="ai">
+        <h1>Audios</h1>
+        <div class="audio">
+            <audio controls muted>
+                <source src="../assets/audio/audio1.mp3">
+            </audio>
+            <audio controls muted>
+                <source src="../assets/audio/audio2.mp3">
+            </audio>
+            <audio controls muted>
+                <source src="../assets/audio/audio3.mp3">
+            </audio>
+            <audio controls muted>
+                <source src="../assets/audio/audio4.mp3">
+            </audio>
+            <audio controls muted>
+                <source src="../assets/audio/audio5.mp3">
+            </audio>
+            <audio controls muted>
+                <source src="../assets/audio/audio6.mp3">
+            </audio>
+        </div>
+    </div>
+
+</body>
+</html>
